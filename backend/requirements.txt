@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+Werkzeug
+pdfplumber
+python-docx
+phonenumbers
+google-generativeai
+pandas
+langchain-community
+langchain
+chromadb
+sentence-transformers
