@@ -282,11 +282,13 @@ This project demonstrates the practical application of several cutting-edge AI r
 
 | Research Area | How it is Applied |
 |---|---|
-| **Retrieval-Augmented Generation (RAG)** | Resume profile retrieves relevant job documents from a vector store |
-| **Dense Passage Retrieval** | Sentence Transformer embeddings instead of sparse BM25/TF-IDF |
-| **LLM-based Information Extraction** | Gemini API extracts structured data from unstructured resume text |
-| **Semantic Textual Similarity** | Cosine similarity in embedding space for job-candidate matching |
-| **Hybrid NLP Pipeline** | Rule-based parsing combined with deep learning for robustness |
+| **Semantic Search / Dense Retrieval** | Sentence Transformer embeddings replace sparse BM25/TF-IDF for context-aware job matching |
+| **LLM-based Information Extraction** | Google Gemini API extracts and summarizes structured candidate data from unstructured resume text |
+| **Semantic Textual Similarity** | Cosine similarity in embedding space ranks internships by relevance to the candidate profile |
+| **Hybrid NLP Pipeline** | Rule-based section parsing combined with deep learning embeddings for robust resume understanding |
+| **Vector Database Applications** | ChromaDB demonstrates practical use of persistent vector stores for real-time similarity retrieval |
+
+> **Note:** The system uses two independent AI pipelines — LLM-based extraction (Gemini) and semantic vector search (ChromaDB) — which are not coupled in a RAG (Retrieval-Augmented Generation) loop. A natural extension of this work would be to implement full RAG: feeding the retrieved job descriptions back into the LLM to generate personalized, grounded explanations for each recommendation.
 
 This system can serve as a foundation for research in:
 - Automated recruitment and talent acquisition
